@@ -1,0 +1,8 @@
+JavaScript Execution context
+=> Global Execution context
+=> Function Execution context
+=> Eval Execution context(for mongoose)
+
+Step 1: Global Execution(this)
+Step 2: Memory phase  //sabai variable  undefined hunxa and Function ma defination 
+Step 3: Execution phase  //variable ma value halinxa 

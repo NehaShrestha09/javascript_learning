@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+</head>
+<body>
+    <h1>JavaScript Async</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const sayDate = (str) => {
+    //     console.log(str,Date.now()); 
+    // }
+    // const intervalId = setInterval(sayDate, 1000, "hello");
+
+    // clearInterval(intervalId)
+
+    const onClick = () => {
+        console.log("Neha", Date.now())
+    }
+    let inLoop;
+    document.querySelector('#start')
+    .addEventListener('click', () => {
+    inLoop = setInterval(onClick,1000)
+    })
+
+    document.querySelector('#stop')
+    .addEventListener('click',() => {
+        clearInterval(inLoop)
+    })
+</script>
+</html>
